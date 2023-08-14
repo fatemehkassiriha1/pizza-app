@@ -1,7 +1,8 @@
 import React,{useState} from "react";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
-const Navbar = () => {
+
+const Header = () => {
   const [openBar,setOpenBars] = useState(false)
 
   const handleClickBar = ()=>{
@@ -13,7 +14,7 @@ const Navbar = () => {
       <div className="md:mx-36 mx-7 my-2 flex justify-between items-center">
         <div className="flex justify-center max-w-[70px]">
           <Link to="/">
-            <img src={require("../assets/pizzaLogo.png")} alt="logo" />
+            <img src={require("../../../assets/pizzaLogo.png")} alt="logo" />
           </Link>
         </div>
         <div className={`xs:block ${!openBar && "hidden"}`}>
@@ -37,4 +38,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;
