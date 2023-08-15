@@ -16,7 +16,7 @@ const Home = () => {
             PIZZA TO FIT ANY TASTE
           </p>
           <Link to="/menu">
-            <Button>ORDER NOW</Button>
+            <Button type="button">ORDER NOW</Button>
           </Link>
         </div>
       </div>

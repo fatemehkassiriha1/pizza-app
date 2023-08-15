@@ -1,13 +1,13 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 
 const Header = () => {
-  const [openBar,setOpenBars] = useState(false)
+  const [openBar, setOpenBars] = useState(false);
 
-  const handleClickBar = ()=>{
-    setOpenBars(!openBar)
-  }
+  const handleClickBar = () => {
+    setOpenBars(!openBar);
+  };
 
   return (
     <nav className="bg-black w-full h-[10vh] relative">
@@ -24,13 +24,37 @@ const Header = () => {
                 shadow-2xl shadow-neutral-800 xs:shadow-none [&>*]:p-3 [&>*]:w-full [&>*]:flex [&>*]:justify-center
                 [&>*]:transition [&>*]:ease-in [&>*]:duration-300"
           >
-            <Link className="hover:bg-zinc-800 xs:hover:bg-transparent rounded-lg" to="/"> Home </Link>
-            <Link className="hover:bg-zinc-800 xs:hover:bg-transparent rounded-lg" to="/menu"> Menu </Link>
-            <Link className="hover:bg-zinc-800 xs:hover:bg-transparent rounded-lg" to="/about">About</Link>
-            <Link className="hover:bg-zinc-800 xs:hover:bg-transparent rounded-lg" to="/contact"> Contact</Link>
+            <Link
+              className="hover:bg-zinc-800 xs:hover:bg-transparent rounded-lg"
+              to="/"
+            >
+              Home
+            </Link>
+            <Link
+              className="hover:bg-zinc-800 xs:hover:bg-transparent rounded-lg"
+              to="/menu"
+            >
+              Menu
+            </Link>
+            <Link
+              className="hover:bg-zinc-800 xs:hover:bg-transparent rounded-lg"
+              to="/about"
+            >
+              About
+            </Link>
+            <Link
+              className="hover:bg-zinc-800 xs:hover:bg-transparent rounded-lg"
+              to="/contact"
+            >
+              Contact
+            </Link>
           </div>
         </div>
-        <button id={openBar ? "open" : "close"} onClick={handleClickBar} className=" xs:hidden flex items-center cursor-pointer text-white">
+        <button
+          id={openBar ? "open" : "close"}
+          onClick={handleClickBar}
+          className=" xs:hidden flex items-center cursor-pointer text-white"
+        >
           <FaBars size={24} />
         </button>
       </div>

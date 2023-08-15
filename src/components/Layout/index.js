@@ -8,8 +8,8 @@ const Layout = () => {
     <>
       <header className="hidden">Fateme's Pizzeria</header>
       <Header />
-      <Outlet/>
-      <Footer/>
+      <Outlet />
+      <Footer />
     </>
   );
 };

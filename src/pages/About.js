@@ -4,12 +4,10 @@ import multiplePizzas from "../assets/multiplePizzas.jpeg";
 const About = () => {
   return (
     <main className="flex flex-col justify-center text-center">
-      {/* <img
-        src={multiplePizzas}
-        alt="multiple Pizzas"
-        className="w-full h-[80vh]"
-      /> */}
-      <div style={{backgroundImage:`url(${multiplePizzas})`}} className="h-[55vh] bg-cover bg-no-repeat bg-center"></div>
+      <div
+        style={{ backgroundImage: `url(${multiplePizzas})` }}
+        className="h-[55vh] bg-cover bg-no-repeat bg-center"
+      ></div>
       <div className="px-20 lg:px-40 py-20 space-y-6">
         <h1 className="font-mono">About</h1>
         <p className="italic line-clamp-[13] lg:line-clamp-6 font-serif">

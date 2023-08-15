@@ -16,7 +16,7 @@ const Footer = () => {
       <ul className="flex justify-center gap-7 [&>*]:text-4xl w-full p-5">
         <li className="hover:bg-zinc-700 transition duration-300 rounded-full p-2">
           <Link to={"#"}>
-            <AiOutlineTwitter  />
+            <AiOutlineTwitter />
           </Link>
         </li>
         <li className="hover:bg-zinc-700 transition duration-300 rounded-full p-2">
@@ -26,12 +26,12 @@ const Footer = () => {
         </li>
         <li className="hover:bg-zinc-700 transition duration-300 rounded-full p-2">
           <Link to={"#"}>
-            <AiOutlineInstagram  />
+            <AiOutlineInstagram />
           </Link>
         </li>
         <li className="hover:bg-zinc-700 transition duration-300 rounded-full p-2">
           <Link to={"#"}>
-            <AiOutlineWhatsApp/>
+            <AiOutlineWhatsApp />
           </Link>
         </li>
       </ul>
