@@ -10,7 +10,6 @@ import NoMatch from "./pages/NoMatch";
 
 const App = () => {
   return (
-    <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" exact element={<Layout />}>
@@ -22,7 +21,6 @@ const App = () => {
           </Route>
         </Routes>
       </BrowserRouter>
-    </div>
   );
 };
 

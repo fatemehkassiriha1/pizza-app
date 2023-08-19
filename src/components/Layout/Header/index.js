@@ -10,8 +10,8 @@ const Header = () => {
   };
 
   return (
-    <nav className="bg-black w-full h-[10vh] relative">
-      <div className="md:mx-36 mx-7 my-2 flex justify-between items-center">
+    <nav className="bg-black w-full py-2 h-[10vh] relative">
+      <div className="md:mx-36 mx-7 flex justify-between items-center">
         <div className="flex justify-center max-w-[70px]">
           <Link to="/">
             <img src={require("../../../assets/pizzaLogo.png")} alt="logo" />
